@@ -1,10 +1,22 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "sistemaspymesjc/foroworkers",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "Open source Laravel Forum.",
+    "keywords": ["forum", "forum-site"],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan Castro",
+            "email": "sistemaspymesjc@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/sistemaspymesjc/foroworkers/issues",
+        "forum": "https://foroworkers.sistemaspymesjc.online",
+        "wiki": "https://github.com/sistemaspymesjc/foroworkers/wiki",
+        "source": "https://github.com/sistemaspymesjc/foroworkers"
+    },
     "require": {
         "php": "^8.3",
         "laravel/framework": "^13.7",

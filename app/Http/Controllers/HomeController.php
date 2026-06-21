@@ -4,20 +4,33 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Http\Services\ModuleService;
+
 class HomeController extends Controller
 {
+
+    protected $moduleService;
+
+
+    public function __construct(ModuleService $moduleService){
+
+      $this->moduleService = $moduleService;  
+
+  }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $data = env('APP_ENV');
+        $player_name = 'hiraku';
 
-        // printf($data);
+        $data = $this->moduleService->responseGetByPlayerName('/pub/player/',$player_name);
 
-        // exit;
-        return view('home');
-    }
+          print_r($data);
+
+          exit;
+       return view('home');
+   }
 
     /**
      * Show the form for creating a new resource.
